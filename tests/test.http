@@ -1,0 +1,66 @@
+@BaseUrl = http://127.0.0.1:8123
+
+POST {{BaseUrl}}/socketio HTTP/1.1
+Content-Type: application/json
+
+{
+    "EmitName": "app",
+    "EmitData": {
+        "cmd": "SetAttribute",
+        "AttrName": "UseLastIsFullscreen",
+        "AttrValue": true
+    }
+}
+
+###
+POST {{BaseUrl}}/socketio HTTP/1.1
+Content-Type: application/json
+
+{
+    "EmitName": "app",
+    "EmitData": {
+        "cmd": "restart"
+    }
+}
+
+###
+POST {{BaseUrl}}/socketio HTTP/1.1
+Content-Type: application/json
+
+{
+    "EmitName": "app",
+    "EmitData": {
+        "cmd": "ResetConfig"
+    }
+}
+###
+POST {{BaseUrl}}/socketio HTTP/1.1
+Content-Type: application/json
+
+{
+    "EmitName": "app",
+    "EmitData": {
+        "cmd": "update"
+    }
+}
+###
+POST {{BaseUrl}}/socketio HTTP/1.1
+Content-Type: application/json
+
+{
+    "EmitName": "app",
+    "EmitData": {
+        "cmd": "ToggleFullScreen"
+    }
+}
+###
+POST {{BaseUrl}}/socketio HTTP/1.1
+Content-Type: application/json
+
+{
+    "EmitName": "app",
+    "EmitData": {
+        "cmd": "LoadUrl",
+        "url": "http://news.google.com"
+    }
+}
