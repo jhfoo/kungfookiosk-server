@@ -20,7 +20,7 @@
   "homepage": "https://github.com/jhfoo/kungfookiosk-server#readme",
   "devDependencies": {
     "restify": "^8.5.1",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.4.0",
     "supervisor": "^0.12.0"
   }
 }
